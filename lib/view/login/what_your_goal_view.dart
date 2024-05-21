@@ -1,6 +1,7 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:fitnestx/common/colo_extension.dart';
 import 'package:fitnestx/common_widget/round_button.dart';
+import 'package:fitnestx/view/login/welcome_view.dart';
 import 'package:flutter/material.dart';
 
 class WhatYourGoalView extends StatefulWidget {
@@ -130,12 +131,12 @@ class _WhatYourGoalViewState extends State<WhatYourGoalView> {
                   const Spacer(),
                   SizedBox(height: media.height * 0.05),
                   RoundButton(
-                    title: 'Confirm',
+                    title: 'Go To Home',
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => const WhatYourGoalView()));
+                              builder: (context) => const WelcomeView()));
                     },
                   ),
                 ],
