@@ -1,6 +1,7 @@
 import 'package:fitnestx/common/colo_extension.dart';
 import 'package:fitnestx/common_widget/round_button.dart';
 import 'package:fitnestx/common_widget/round_textfield.dart';
+import 'package:fitnestx/view/login/complete_profile_view.dart';
 import 'package:flutter/material.dart';
 
 class SignupView extends StatefulWidget {
@@ -109,7 +110,15 @@ class _SignupViewState extends State<SignupView> {
                   ],
                 ),
                 SizedBox(height: media.height * 0.04),
-                RoundButton(title: 'Register', onPressed: () {}),
+                RoundButton(
+                  title: 'Register',
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => const CompleteProfileView()));
+                  },
+                ),
                 SizedBox(height: media.height * 0.04),
                 Row(
                   children: [
