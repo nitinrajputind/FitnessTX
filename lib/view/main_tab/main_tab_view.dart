@@ -1,5 +1,6 @@
 import 'package:fitnestx/common/colo_extension.dart';
 import 'package:fitnestx/common_widget/tab_button.dart';
+import 'package:fitnestx/view/home/blank_view.dart';
 import 'package:fitnestx/view/home/home_view.dart';
 import 'package:flutter/material.dart';
 
@@ -19,6 +20,10 @@ class _MainTabViewState extends State<MainTabView> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Tcolor.white,
+      body: PageStorage(
+        bucket: pageBucket,
+        child: currentview,
+      ),
       floatingActionButtonLocation: FloatingActionButtonLocation.centerDocked,
       floatingActionButton: SizedBox(
         width: 70,
@@ -60,6 +65,7 @@ class _MainTabViewState extends State<MainTabView> {
                 isActive: seletTab == 0,
                 onTap: () {
                   seletTab = 0;
+                  currentview = const HomeView();
                   if (mounted) {
                     setState(() {});
                   }
@@ -71,6 +77,7 @@ class _MainTabViewState extends State<MainTabView> {
                 isActive: seletTab == 1,
                 onTap: () {
                   seletTab = 1;
+                  currentview = const BlankView();
                   if (mounted) {
                     setState(() {});
                   }
@@ -83,6 +90,7 @@ class _MainTabViewState extends State<MainTabView> {
                 isActive: seletTab == 2,
                 onTap: () {
                   seletTab = 2;
+                  currentview = const BlankView();
                   if (mounted) {
                     setState(() {});
                   }
@@ -94,6 +102,7 @@ class _MainTabViewState extends State<MainTabView> {
                 isActive: seletTab == 3,
                 onTap: () {
                   seletTab = 3;
+                  currentview = const BlankView();
                   if (mounted) {
                     setState(() {});
                   }

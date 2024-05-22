@@ -33,7 +33,7 @@ class _WelcomeViewState extends State<WelcomeView> {
               ),
               SizedBox(height: media.width * 0.1),
               Text(
-                "Welcome, Stefani",
+                "Welcome, Nitin",
                 style: TextStyle(
                   color: Tcolor.black,
                   fontSize: 20,

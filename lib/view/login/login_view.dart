@@ -2,7 +2,6 @@ import 'package:fitnestx/common/colo_extension.dart';
 import 'package:fitnestx/common_widget/round_button.dart';
 import 'package:fitnestx/common_widget/round_textfield.dart';
 import 'package:fitnestx/view/login/complete_profile_view.dart';
-import 'package:fitnestx/view/login/signup_view.dart';
 import 'package:flutter/material.dart';
 
 class LoginView extends StatefulWidget {
